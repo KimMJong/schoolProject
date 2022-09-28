@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* �솕硫댁뿉 �꼫臾� 遺숈뼱 �엳�뼱�꽌...  */
+body {
+  padding: 30px;
+  background-color: #404040;
+  color: rgb(189, 167, 232);
+}
+
+/* header �쁺�뿭  */
+header {
+  padding: 5px;
+}
+
+header a {
+  text-decoration: none;
+  color: #333333;
+}
+
+nav {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+nav ul {
+  list-style: none;
+  border-top: 1px solid rgb(189, 167, 232);
+  border-bottom: 1px solid rgb(189, 167, 232);
+  text-align: center;
+}
+nav ul li {
+  display: inline;
+  letter-spacing: 0.3em;
+  margin-left: 2em;
+}
+nav ul li a {
+  text-decoration: none;
+  color: rgb(189, 167, 232);
+  line-height: 3em;
+  text-transform: uppercase;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+#login_btn {
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+
+  border: 3px solid rgb(189, 167, 232);
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(189, 167, 232);
+  padding: 5px;
+}
+
+#logout_btn {
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+
+  border: 3px solid rgb(189, 167, 232);
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(189, 167, 232);
+  padding: 5px;
+}
+
+#login_btn_group button:hover {
+  color: white;
+  background-color: skyblue;
+}
+
+.active {
+  color: #ffffff;
+}
+
+/* 寃��깋李� */
+#searchBar {
+  width: 750px;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+}
+
+/* 寃��깋踰꾪듉 */
+#searchBtn {
+  margin-left: 5px;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  color: rgb(189, 167, 232);
+}
+
+#mainimg {
+  margin-bottom: 30px;
+}
+
+/* 寃뚯떆�뙋 CSS */
+.list_con {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.all_pop_wrap {
+  background-color: rgb(104, 103, 103);
+  color: white;
+  margin: 30px;
+  width: 500px;
+  height: 100%;
+  border: 3px solid rgb(189, 167, 232);
+}
+
+.all_pop_list_body .item > div {
+  display: inline-block;
+}
+
+.item {
+  margin: 10px;
+  background-color: rgb(172, 172, 172);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+
+a {
+  text-decoration: none !important;
+  color: inherit;
+}
+a:hover {
+  text-decoration: none !important;
+}
+
+/* 
+.item a {
+  text-decoration: none !important;
+}
+.item a:hover {
+  text-decoration: none !important;
+} */
+
+.item:hover {
+  background-color: skyblue;
+}
+/* .item a {
+  text-decoration: none;
+  color: inherit;
+} */
+
+.title {
+  width: 200px;
+  margin-left: 10px;
+  margin-right: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.writer {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 10pt;
+  color: antiquewhite;
+  font-weight: bold;
+}
+
+.sumimg {
+  margin: 10px;
+}
+
+.ranking {
+  font-weight: 999;
+  color: white;
+  margin-left: 25px;
+  margin-right: 5px;
+}
+
+.title_con {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+.date_writer_con {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+}
+/* .recommend {
+  padding: 10px;
+  background-color: rgb(189, 167, 232);
+} */
+.commnet {
+  color: rgb(77, 77, 255);
+  line-height: 50px;
+  font-size: 10pt;
+  margin-right: 10px;
+}
+
+.date {
+  color: antiquewhite;
+  font-size: 10pt;
+}
