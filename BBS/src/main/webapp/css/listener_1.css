@@ -1,0 +1,247 @@
+/* * {
+  margin: 0;
+  padding: 0;
+} */
+
+/* 화면에 너무 붙어 있어서...  */
+body {
+  padding: 30px;
+  background-color: #404040;
+  color: rgb(189, 167, 232);
+}
+
+/* header 영역  */
+header {
+  padding: 5px;
+}
+
+.link {
+  display: inline-block;
+}
+
+/* 로고와 로그인 버튼 */
+#logo_login {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+}
+
+header a {
+  text-decoration: none;
+  color: #333333;
+}
+
+nav {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+nav ul {
+  list-style: none;
+  border-top: 2px solid rgb(189, 167, 232);
+  border-bottom: 2px solid rgb(189, 167, 232);
+  text-align: center;
+}
+nav ul li {
+  display: inline;
+  letter-spacing: 0.3em;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+nav ul li a {
+  text-decoration: none;
+  font-size: 15pt;
+  font-weight: 800;
+  color: rgb(189, 167, 232);
+  line-height: 3em;
+  text-transform: uppercase;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* 눌렀을떄 변하는 */
+.active {
+  text-decoration: underline skyblue;
+
+  color: skyblue;
+}
+
+#login_btn {
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+
+  border: 3px solid rgb(189, 167, 232);
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(189, 167, 232);
+  padding: 10px;
+  margin-bottom: 100px;
+}
+#login_btn_group {
+  height: 0px;
+}
+
+#login_btn_group button:hover {
+  color: white;
+  background-color: skyblue;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.board_con {
+  color: aliceblue;
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+.board_list_wrap {
+  /* padding: 100px; */
+  width: 1100px;
+}
+.board_list_head,
+.board_list_body .item {
+  font-size: 0;
+  padding: 10px 0;
+}
+
+.board_list_head {
+  border-top: 2px solid lightgray;
+  border-bottom: 1px solid lightgray;
+}
+
+.board_list_body .item {
+  border-bottom: 1px solid lightgray;
+}
+.board_list_head > div,
+.board_list_body .item > div {
+  display: inline-block;
+  text-align: center;
+
+  font-size: 14px;
+}
+
+.board_list_head > div {
+  font-weight: 600;
+}
+.board_list .num {
+  width: 100px;
+}
+.board_list .rec {
+  width: 100px;
+  padding-right: 50px;
+}
+
+/* .board_list .simg{
+  width: 10%;
+  height: 20;
+} */
+
+.board_list .tit {
+  width: 400px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.board_list .tit a {
+  display: inline-block !important;
+  width: fit-content;
+  max-width: 370px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.board_list div.tit a:hover {
+  text-decoration: underline;
+}
+.board_list_body div.tit {
+  font-size: 20px;
+  text-align: left;
+}
+
+.board_list .wrt {
+  width: 125px;
+}
+
+.board_list .dat {
+  width: 200px;
+}
+
+.board_list .view {
+  width: 100px;
+}
+
+/* .num {
+  margin-bottom: 10px;
+} */
+
+.board_title {
+  font-size: 35px;
+  margin-bottom: 25px;
+  text-align: center;
+  color: aliceblue;
+}
+
+.board_list_wrap .paging {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 0;
+}
+
+.board_list_wrap .paging a {
+  display: inline-block;
+  margin-left: 10px;
+  padding: 5px 10px;
+
+  border-radius: 2px;
+  font-size: 12px;
+}
+
+.board_list_wrap .paging a :first-child {
+  margin-left: 0;
+}
+
+.board_list_wrap .paging a.pbtn {
+  background-color: #333333;
+}
+.board_list_wrap .paging a.nump {
+  border: 1px solid #ccc;
+  font-weight: 600;
+}
+
+.board_list_wrap .paging a.nump_on {
+  background-color: rgb(189, 167, 232);
+}
+#liSearchOption {
+  width: 1100px;
+}
+
+#write_btn {
+  margin-right: 10px;
+  float: right;
+}
+
+#paging_con {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+}
+
+.commen {
+  display: inline;
+  text-align: center;
+  font-size: 12px;
+  color: #ccc;
+}

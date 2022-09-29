@@ -1,0 +1,32 @@
+/* * {
+  margin: 0;
+  padding: 0;
+} */
+
+/* 화면에 너무 붙어 있어서...  */
+body {
+  padding: 30px;
+  background-color: #404040;
+  color: rgb(189, 167, 232);
+}
+
+/* header 영역  */
+header {
+  padding: 5px;
+}
+
+.link {
+  display: inline-block;
+}
+
+.main_box{
+  width: 600px;
+  height: 700px;
+  background-color: antiquewhite;
+}
+
+.email_box{
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
