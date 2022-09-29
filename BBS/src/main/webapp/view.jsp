@@ -116,7 +116,7 @@
 					</tr>
 					<tr>
 						<td>좋아요</td>
-						<td colspan="2"><%= bbs.getLike_count() %></td>
+						<td colspan="2"><%= bbs.getUserPoint() %></td>
 					</tr>
 				</tbody>
 			</table>

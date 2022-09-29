@@ -32,7 +32,7 @@
 		}
 	%>
     <!-- 로고이미지 -->
-    <a href="https://naver.com">
+    <a href="main.jsp">
       <img src="assets/logo.PNG" />
       <!-- width="숫자" height="숫자"-->
     </a>
