@@ -46,9 +46,9 @@
    	<%
     	}else{
    	%>
-    		<div style='width:160px; margin-right: 10px; float: right;' id="login_btn_group">
-    	      <a href="profil.jsp"><button id="login_btn">프로필</button></a>
-    	      <a href="logoutAction.jsp"><button id="login_btn">로그아웃</button></a>
+    		<div style='width:190px; margin-right: 10px; float: right;' id="login_btn_group">
+    	      <a href="profil.jsp"><button id="login_btn">MY PAGE</button></a>
+    	      <a href="logoutAction.jsp"><button id="login_btn">LOGOUT</button></a>
     	    </div>
     <% 
     	}
@@ -87,7 +87,7 @@
   <!-- 메인로고이미지 -->
   <div style="text-align:center">
     <a href="https://naver.com">
-      <img src="./assets/mainlogo.png" /></a>
+      <img src="assets/mainlogo.PNG" /></a>
   </div>
 
   <!-- 검색버튼 -->
