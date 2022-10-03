@@ -80,6 +80,7 @@
 				style="text-align: center; border: 1px solid #dddddd">
 				<thead>
 					<!-- tr은 하나의 행 -->
+					<!--게시글 제목 부분 -->
 					<tr>
 						<th style="background-color: #eeeeee; text-align: center;">번호</th>
 						<th style="background-color: #eeeeee; text-align: center;">제목</th>

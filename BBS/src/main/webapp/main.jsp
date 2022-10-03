@@ -46,10 +46,9 @@
    	<%
     	}else{
    	%>
-    		<div style='width:50px; margin: 10px; float: right;' id="login_btn_group">
-    	      <a href="logoutAction.jsp"><button id="logout_btn">로그아웃</button></a>
+    		<div style='width:160px; margin-right: 10px; float: right;' id="login_btn_group">
     	      <a href="profil.jsp"><button id="login_btn">프로필</button></a>
-    	      <a href="#"><button id="login_btn">회원탈퇴</button></a>
+    	      <a href="logoutAction.jsp"><button id="login_btn">로그아웃</button></a>
     	    </div>
     <% 
     	}
@@ -61,7 +60,7 @@
   <!-- 카테고리 -->
   <nav>
     <ul>
-      <li><a class="active" href="main.html">홈</a></li>
+      <li><a class="active" href="main.jsp">홈</a></li>
       <li><a href="listener_bbs.jsp">리스너</a></li>
       <li><a href="index.html">가창자</a></li>
       <li><a href="index.html">작곡가</a></li>

@@ -44,8 +44,7 @@
                 </div>
                 </form>
                 <div class="links">
-                    <a href="#">HIP-UP이 처음이신가요?</a>
-
+                    <a href="join.jsp">HIP-UP이 처음이신가요?</a>
                 </div>
                 <div class="links2">
                     <a href="#">비밀번호를 잊어버리셨나요?</a>
