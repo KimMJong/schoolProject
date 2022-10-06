@@ -15,18 +15,16 @@ header {
   padding: 5px;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .link {
   display: inline-block;
 }
 
 /* 로고와 로그인 버튼 */
-#logo_login {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  align-content: center;
-}
 
 header a {
   text-decoration: none;
@@ -90,112 +88,56 @@ nav ul li a:hover {
   background-color: skyblue;
 }
 
-.search_con {
+.item_wrap {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
   align-content: center;
-  margin-right: 53px;
 }
-
-#selSearchOption {
-  text-align: center;
-  height: 52px;
-  width: 70px;
-  border-radius: 5px;
-}
-
-input {
-
-  
-  font-size: 10pt;
-  padding-left: 10px;
-}
-/* 검색창 */
-#searchBar {
-  width: 600px;
-  height: 50px;
-  border: none;
-  border-radius: 5px;
-}
-
-/* 검색버튼 */
-#searchBtn {
-  margin-left: 5px;
-  width: 50px;
-  height: 52px;
-  position: absolute;
-  color: rgb(189, 167, 232);
-}
-
-#mainimg {
-  margin-bottom: 30px;
-}
-
-/* 게시판 CSS */
-.list_con {
+.item_wrap2 {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   align-content: center;
 }
-
-.all_pop_wrap {
-  background-color: rgb(104, 103, 103);
-  color: white;
-  margin: 30px;
-  width: 500px;
-  height: 100%;
-  border: 3px solid rgb(189, 167, 232);
-}
-
-.all_pop_list_body .item > div {
-  display: inline-block;
-}
-.pop_text {
-  margin: 20px;
-  font-size: 15pt;
-  text-align: center;
-}
-
 .item {
+  /* background-color: #646363; */
+  width: 300px;
+  height: 200px;
   margin: 10px;
-  background-color: rgb(172, 172, 172);
+  border: solid 2px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
   align-content: center;
 }
-
-.all_pop_list_body a {
-  text-decoration: none;
-  color: inherit;
-}
-.all_pop_list_body a:hover {
-  text-decoration: none;
-}
-
-/* 
-.item a {
-  text-decoration: none !important;
-}
-.item a:hover {
-  text-decoration: none !important;
-} */
 
 .item:hover {
-  background-color: skyblue;
+  background-color: #646363;
 }
 /* .item a {
   text-decoration: none;
   color: inherit;
 } */
+.board_all_wrap{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.board_title {
+  text-align: center;
+  font-size: 25pt;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
 
 .title {
-  width: 200px;
+  width: 150px;
   margin-left: 10px;
   margin-right: 10px;
   overflow: hidden;
@@ -211,25 +153,37 @@ input {
 }
 
 .sumimg {
-  margin: 10px;
+  margin-top: 25px;
+  margin-bottom: 5px;
+  width: 160px;
+  height: 100px;
 }
 
-.ranking {
-  font-weight: 999;
-  font-size: 15pt;
-  font-style: italic;
-  text-decoration: underline;
-  color: rgb(117, 117, 117);
-  margin-left: 25px;
-  margin-right: 5px;
+.recommend {
+  color: steelblue;
+  font-size: 10pt;
+  margin-bottom: 5px;
+  
 }
 
 .title_con {
+  color: white;
   display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+
+}
+
+.tit_con{
+   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
   align-content: center;
+  margin-bottom: 5px;
+
 }
 .date_writer_con {
   display: flex;
@@ -237,11 +191,12 @@ input {
   justify-content: space-evenly;
   align-items: center;
   align-content: center;
+  margin-bottom: 10px;
 }
 
 .comment {
   color: rgb(77, 77, 255);
-  line-height: 50px;
+  
   font-size: 10pt;
   margin-right: 10px;
 }
@@ -249,4 +204,56 @@ input {
 .date {
   color: antiquewhite;
   font-size: 10pt;
+}
+.board_list_wrap {
+  width: 1600px;
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+}
+.board_list_wrap .paging {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 0;
+}
+
+.board_list_wrap .paging a {
+  display: inline-block;
+  margin-left: 10px;
+  padding: 5px 10px;
+  border-radius: 2px;
+  font-size: 12px;
+}
+
+.board_list_wrap .paging a :first-child {
+  margin-left: 0;
+}
+
+.board_list_wrap .paging a.pbtn {
+  color: aliceblue;
+  background-color: #333333;
+}
+.board_list_wrap .paging a.nump {
+  color: aliceblue;
+  border: 1px solid #ccc;
+  font-weight: 600;
+}
+
+.board_list_wrap .paging a.nump_on {
+  color: aliceblue;
+  background-color: rgb(189, 167, 232);
+}
+
+.list_search_con {
+  width: 100%;
+  display: inline-block;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#write_btn {
+  float: right;
 }

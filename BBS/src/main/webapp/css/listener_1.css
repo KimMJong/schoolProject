@@ -90,108 +90,63 @@ nav ul li a:hover {
   background-color: skyblue;
 }
 
+table {
+  border-collapse: collapse;
+}
+
+caption {
+  font-size: 25pt;
+  padding-bottom: 30px;
+}
+
 a {
   text-decoration: none;
   color: inherit;
 }
 
-.board_con {
-  color: aliceblue;
-  margin: 10px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  align-content: center;
-}
 .board_list_wrap {
-  /* padding: 100px; */
-  width: 1100px;
-}
-.board_list_head,
-.board_list_body .item {
-  font-size: 0;
-  padding: 10px 0;
+  color: aliceblue;
+  padding: 10px;
 }
 
-.board_list_head {
+.board_list {
+  width: 75%;
   border-top: 2px solid lightgray;
+  margin-bottom: 15px;
+}
+
+.board_list tr {
   border-bottom: 1px solid lightgray;
 }
 
-.board_list_body .item {
-  border-bottom: 1px solid lightgray;
+.board_list th,
+.board_list td {
+  padding: 10px;
+  font-size: 15px;
+  /* border: 1px solid #999; */
 }
-.board_list_head > div,
-.board_list_body .item > div {
-  display: inline-block;
+
+.board_list td {
   text-align: center;
-
-  font-size: 14px;
 }
 
-.board_list_head > div {
-  font-weight: 600;
-}
-.board_list .num {
-  width: 100px;
-}
-.board_list .rec {
-  width: 100px;
-  padding-right: 50px;
-}
-
-/* .board_list .simg{
-  width: 10%;
-  height: 20;
-} */
-
-.board_list .tit {
-  width: 400px;
+.board_list tbody .tit {
+  text-align: left;
+  font-size: 15pt;
+  display: inline-block;
+  width: 300px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.board_list .tit a {
-  display: inline-block !important;
-  width: fit-content;
-  max-width: 370px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.board_list div.tit a:hover {
+.board_list tbody .tit:hover {
   text-decoration: underline;
 }
-.board_list_body div.tit {
-  font-size: 20px;
-  text-align: left;
+
+.board_list tbody .commen {
+  color: #ccc;
+  font-size: 3pt;
 }
-
-.board_list .wrt {
-  width: 125px;
-}
-
-.board_list .dat {
-  width: 200px;
-}
-
-.board_list .view {
-  width: 100px;
-}
-
-/* .num {
-  margin-bottom: 10px;
-} */
-
-.board_title {
-  font-size: 35px;
-  margin-bottom: 25px;
-  text-align: center;
-  color: aliceblue;
-}
-
 .board_list_wrap .paging {
   margin-top: 50px;
   text-align: center;
@@ -202,7 +157,6 @@ a {
   display: inline-block;
   margin-left: 10px;
   padding: 5px 10px;
-
   border-radius: 2px;
   font-size: 12px;
 }
@@ -222,26 +176,22 @@ a {
 .board_list_wrap .paging a.nump_on {
   background-color: rgb(189, 167, 232);
 }
-#liSearchOption {
-  width: 1100px;
-}
 
-#write_btn {
-  margin-right: 10px;
-  float: right;
-}
-
-#paging_con {
+.board_con {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   align-content: center;
 }
 
-.commen {
-  display: inline;
-  text-align: center;
-  font-size: 12px;
-  color: #ccc;
+.list_search_con {
+  width: 75%;
+  display: inline-block;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#write_btn {
+  float: right;
 }
