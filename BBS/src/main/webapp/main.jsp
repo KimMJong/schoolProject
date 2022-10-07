@@ -62,10 +62,10 @@
     <ul>
       <li><a class="active" href="main.jsp">홈</a></li>
       <li><a href="listener_bbs.jsp">리스너</a></li>
-      <li><a href="index.html">가창자</a></li>
-      <li><a href="index.html">작곡가</a></li>
-      <li><a href="index.html">엔지니어</a></li>
-      <li><a href="index.html">홍보게시판</a></li>
+      <li><a href="singer_bbs.html">가창자</a></li>
+      <li><a href="writer_bbs.html">작곡가</a></li>
+      <li><a href="engineer_bbs.html">엔지니어</a></li>
+      <li><a href="hongbo_bbs.html">홍보게시판</a></li>
       <li><a href="index.html">장터</a></li>
     </ul>
   </nav>

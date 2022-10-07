@@ -11,7 +11,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link href="이미지주소.ico" rel="shortcut icon" type="image/x-icon" />
-<title>HIP-UP 리스너 게시판</title>
+<title>HIP-UP 가창자 게시판</title>
 <link rel="stylesheet" href="css/listener_2.css">
 <link rel="favicon" href="./favicon.ico" />
 <!-- 사용자들이 못보는 정보 -->
@@ -59,8 +59,8 @@
 	<nav>
 		<ul>
 			<li><a href="main.jsp">홈</a></li>
-			<li><a class="active" href="listener_bbs.jsp">리스너</a></li>
-			<li><a href="singer_bbs.jsp">가창자</a></li>
+			<li><a href="listener_bbs.jsp">리스너</a></li>
+			<li><a class="active" href="singer_bbs.jsp">가창자</a></li>
 			<li><a href="composer_bbs.jsp">작곡가</a></li>
 			<li><a href="engineer_bbs.jsp">엔지니어</a></li>
 			<li><a href="ppl_bbs.jsp">홍보게시판</a></li>
@@ -69,7 +69,7 @@
 	</nav>
 	<!---게시글 목록  -->
 	<div class="board_all_wrap">
-	<div class="board_title">리스너 게시판</div>
+	<div class="board_title">가창자 게시판</div>
 			<div class="board_list_wrap">
 					<%
 					Listener_BBSDAO bbsDAO = new Listener_BBSDAO();

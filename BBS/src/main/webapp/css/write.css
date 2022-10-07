@@ -42,6 +42,7 @@ body {
   display: flex;
   margin-left: 20px;
 }
+
 .navbar-default ul li {
   text-align: center;
   width: 120px;
@@ -94,7 +95,6 @@ a {
 .board_wrap {
   background-color: #fff;
   width: 1000px;
-  height: 700px;
   padding: 40px;
   margin: 100px auto;
   border-radius: 2%;
