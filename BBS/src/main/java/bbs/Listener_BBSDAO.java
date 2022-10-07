@@ -71,7 +71,7 @@ public class Listener_BBSDAO {
 	
 	//게시글 목록을 보여주는 arraylist함수
 	public ArrayList<Listener_BBS> getList(int pageNumber){
-		String SQL = "SELECT * FROM Listener_BBS WHERE bbsID < ? AND bbsAvailable = 1 order by bbsID DESC LIMIT 10";
+		String SQL = "SELECT * FROM Listener_BBS WHERE bbsID < ? AND bbsAvailable = 1 order by bbsID DESC LIMIT 8";
 		ArrayList<Listener_BBS> list = new ArrayList<Listener_BBS>();
 		try {
 			PreparedStatement pstmt = conn.prepareStatement(SQL);

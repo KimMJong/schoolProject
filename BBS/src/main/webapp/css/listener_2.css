@@ -3,14 +3,14 @@
   padding: 0;
 } */
 
-/* 화면에 너무 붙어 있어서...  */
+/* �솕硫댁뿉 �꼫臾� 遺숈뼱 �엳�뼱�꽌...  */
 body {
   padding: 30px;
   background-color: #404040;
   color: rgb(189, 167, 232);
 }
 
-/* header 영역  */
+/* header �쁺�뿭  */
 header {
   padding: 5px;
 }
@@ -24,7 +24,7 @@ a {
   display: inline-block;
 }
 
-/* 로고와 로그인 버튼 */
+/* 濡쒓퀬�� 濡쒓렇�씤 踰꾪듉 */
 
 header a {
   text-decoration: none;
@@ -34,6 +34,8 @@ header a {
 nav {
   margin-top: 10px;
   margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 nav ul {
   list-style: none;
@@ -60,7 +62,7 @@ nav ul li a:hover {
   text-decoration: underline;
 }
 
-/* 눌렀을떄 변하는 */
+/* �닃���쓣�뻹 蹂��븯�뒗 */
 .active {
   text-decoration: underline skyblue;
 
@@ -94,6 +96,7 @@ nav ul li a:hover {
   justify-content: space-around;
   align-items: center;
   align-content: center;
+  flex-wrap: wrap;
 }
 .item_wrap2 {
   display: flex;
@@ -209,10 +212,11 @@ nav ul li a:hover {
   width: 1600px;
   color: aliceblue;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
   align-content: center;
+  flex-wrap: wrap;
 }
 .board_list_wrap .paging {
   margin-top: 50px;

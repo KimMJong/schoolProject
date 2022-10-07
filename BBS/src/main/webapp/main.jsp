@@ -101,9 +101,10 @@
         </div>
       </form> -->
         <setction class="container">
-          <form id="search-form">
-            <input type="text" id="searchBar">
-            <button id="searchBtn">search</button>
+          <form method="post" name="search" action="searchAction.jsp" id="search-form">
+            <input type="text" id="searchBar"
+            	placeholder="찾고싶은 게시글 제목입력" name="searchText" maxlength="100">
+            <button type="submit" id="searchBtn">search</button>
           </form>
         </setction>
         </setction>
