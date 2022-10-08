@@ -1,0 +1,101 @@
+body {
+  background-color: #5f5f5f;
+}
+
+.all_junk {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+}
+
+#logo {
+  background-color: #404040;
+  color:#b9a8e3;
+  width:600px;
+  height: 60px;
+  text-align: center;
+  font-size:60px;
+  font-weight: bolder;
+  margin-top: 10px;
+}
+
+#all_con {
+  float: inline-start;
+  background-color: #404040;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  width: 600px;
+  height: 650px;
+}
+
+#text_wrap {
+  color: white;
+  align-items: center;
+  font-size: larger;
+  text-align: center;
+  display: block;
+  margin-top: 40px;
+}
+
+#text_feild {
+  font-size: 14px;
+  padding: 10px;
+  border: none;
+  width: 340px;
+  margin-bottom: 30px;
+}
+
+#input_wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
+}
+
+#radio_wrap {
+  color: white;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 15px;
+}
+
+#check_wrap {
+  color: white;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#mail_wrap {
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
+}
+
+#buttons {
+  margin-top: 17px;
+  align-items: center;
+  text-align: center;
+}
+
+button {
+  align-items: center;
+  width: 120px;
+  height: 40px;
+  background-color: rgb(120, 120, 120);
+  color: white;
+  font-weight: bold;
+  border-radius: 20px;
+  border: grey;
+  margin-top: 15px;
+}
+
+button:hover {
+  background-color: rgb(162, 162, 162);
+  cursor: pointer;
+}
