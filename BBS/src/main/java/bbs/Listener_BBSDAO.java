@@ -62,12 +62,24 @@ public class Listener_BBSDAO {
 			pstmt.setString(4, getDate());
 			pstmt.setString(5, bbsContent);
 			pstmt.setInt(6, 1);
+			
 			return pstmt.executeUpdate();
 		}catch(Exception e) {
 			e.printStackTrace();
 		}
 		return -1; //데이터베이스 오류
 	}
+	public int point(String bbsTitle, String userID, String bbsContent) {
+		String SQL = "update User SET userPoint = userPoint-10";
+		try {
+			PreparedStatement pstmt = conn.prepareStatement(SQL);
+			return pstmt.executeUpdate();
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+		return -1; //데이터베이스 오류
+	}
+	
 	
 	//게시글 목록을 보여주는 arraylist함수
 	public ArrayList<Listener_BBS> getList(int pageNumber){

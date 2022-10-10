@@ -51,6 +51,7 @@
 					script.println("alert('성공적으로 작성 되었습니다.')");
 					script.println("location.href = 'listener_bbs.jsp'");
 					script.println("</script>");
+					bbsDAO.point(bbs.getBbsTitle(), userID, bbs.getBbsContent());
 				}
 			}
 		}
