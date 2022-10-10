@@ -6,12 +6,12 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
 
-public class Listener_BBSDAO {
+public class Composer_BBSDAO {
 	private Connection conn;
 	private ResultSet rs;
 
 	// mysql에 접속하는 부분
-	public Listener_BBSDAO() {
+	public Composer_BBSDAO() {
 		try {
 			String dbURL = "jdbc:mysql://localhost:3306/BBS";
 			String dbID = "root";
@@ -40,7 +40,7 @@ public class Listener_BBSDAO {
 	}
 
 	public int getNext() {
-		String SQL = "SELECT bbsID FROM Listener_BBS order by bbsID DESC";
+		String SQL = "SELECT bbsID FROM Composer_BBS order by bbsID DESC";
 		try {
 			PreparedStatement pstmt = conn.prepareStatement(SQL);
 			rs = pstmt.executeQuery();
@@ -56,7 +56,7 @@ public class Listener_BBSDAO {
 
 	
 	public int write(String bbsTitle, String userID, String bbsContent) {
-		String SQL = "INSERT INTO Listener_BBS VALUES (?,?,?,?,?,?,0)";
+		String SQL = "INSERT INTO Composer_BBS VALUES (?,?,?,?,?,?,0)";
 		int point = getPoint(userID);
 		try {
 			
@@ -111,15 +111,15 @@ public class Listener_BBSDAO {
 	}
 
 	// 게시글 목록을 보여주는 arraylist함수
-	public ArrayList<Listener_BBS> getList(int pageNumber) {
-		String SQL = "SELECT * FROM Listener_BBS WHERE bbsID < ? AND bbsAvailable = 1 order by bbsID DESC LIMIT 8";
-		ArrayList<Listener_BBS> list = new ArrayList<Listener_BBS>();
+	public ArrayList<Composer_BBS> getList(int pageNumber) {
+		String SQL = "SELECT * FROM Composer_BBS WHERE bbsID < ? AND bbsAvailable = 1 order by bbsID DESC LIMIT 8";
+		ArrayList<Composer_BBS> list = new ArrayList<Composer_BBS>();
 		try {
 			PreparedStatement pstmt = conn.prepareStatement(SQL);
 			pstmt.setInt(1, getNext() - (pageNumber - 1) * 10);
 			rs = pstmt.executeQuery();
 			while (rs.next()) {
-				Listener_BBS bbs = new Listener_BBS();
+				Composer_BBS bbs = new Composer_BBS();
 				bbs.setBbsID(rs.getInt(1));
 				bbs.setBbsTitle(rs.getString(2));
 				bbs.setUserID(rs.getString(3));
@@ -136,7 +136,7 @@ public class Listener_BBSDAO {
 	}
 
 	public boolean nextPage(int pageNumber) {
-		String SQL = "SELECT * FROM Listener_BBS WHERE bbsID < ? AND bbsAvailable = 1";
+		String SQL = "SELECT * FROM Composer_BBS WHERE bbsID < ? AND bbsAvailable = 1";
 		try {
 			PreparedStatement pstmt = conn.prepareStatement(SQL);
 			pstmt.setInt(1, getNext() - (pageNumber - 1) * 10);
@@ -151,14 +151,14 @@ public class Listener_BBSDAO {
 	}
 
 	// 목록 보여주는 함수
-	public Listener_BBS getBbs(int bbsID) {
-		String SQL = "SELECT * FROM Listener_BBS WHERE bbsID = ?";
+	public Composer_BBS getBbs(int bbsID) {
+		String SQL = "SELECT * FROM Composer_BBS WHERE bbsID = ?";
 		try {
 			PreparedStatement pstmt = conn.prepareStatement(SQL);
 			pstmt.setInt(1, bbsID);
 			rs = pstmt.executeQuery();
 			if (rs.next()) {
-				Listener_BBS bbs = new Listener_BBS();
+				Composer_BBS bbs = new Composer_BBS();
 				bbs.setBbsID(rs.getInt(1));
 				bbs.setBbsTitle(rs.getString(2));
 				bbs.setUserID(rs.getString(3));
@@ -171,12 +171,11 @@ public class Listener_BBSDAO {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		
 		return null;
 	}
 
 	public int update(int bbsID, String bbsTitle, String bbsContent) {
-		String SQL = "UPDATE Listener_BBS SET bbsTitle = ?, bbsContent = ? WHERE bbsID =?";
+		String SQL = "UPDATE Composer_BBS SET bbsTitle = ?, bbsContent = ? WHERE bbsID =?";
 		try {
 			PreparedStatement pstmt = conn.prepareStatement(SQL);
 			pstmt.setString(1, bbsTitle);
@@ -190,7 +189,7 @@ public class Listener_BBSDAO {
 	}
 
 	public int delete(int bbsID) {
-		String SQL = "UPDATE Listener_BBS SET bbsAvailable = 0 WHERE bbsID = ?";
+		String SQL = "UPDATE Composer_BBS SET bbsAvailable = 0 WHERE bbsID = ?";
 		try {
 			PreparedStatement pstmt = conn.prepareStatement(SQL);
 			pstmt.setInt(1, bbsID);

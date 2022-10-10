@@ -1,8 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ page import="java.io.PrintWriter"%>
-<%@ page import="bbs.Listener_BBSDAO"%>
-<%@ page import="bbs.Listener_BBS"%>
+<%@ page import="bbs.Composer_BBSDAO"%>
+<%@ page import="bbs.Composer_BBS"%>
 <%@ page import="java.util.ArrayList"%>
 <!DOCTYPE html>
 <html>
@@ -72,8 +72,8 @@
 	<div class="board_title">작곡가 게시판</div>
 			<div class="board_list_wrap">
 					<%
-					Listener_BBSDAO bbsDAO = new Listener_BBSDAO();
-					ArrayList<Listener_BBS> list = bbsDAO.getList(pageNumber);
+					Composer_BBSDAO bbsDAO = new Composer_BBSDAO();
+					ArrayList<Composer_BBS> list = bbsDAO.getList(pageNumber);
 					for (int i = 0; i < list.size(); i++) {
 					%>
 					<div class="item_wrap">
@@ -112,13 +112,13 @@
 			<%
 			if (pageNumber != 1) {
 			%>
-			<a href="listener_bbs.jsp?pageNumber=<%=pageNumber - 1%>"
+			<a href="composer_bbs.jsp?pageNumber=<%=pageNumber - 1%>"
 				class="btn btn-success btn-arrow-left">이전</a>
 			<%
 			}
 			if (bbsDAO.nextPage(pageNumber + 1)) {
 			%>
-			<a href="listener_bbs.jsp?pageNumber=<%=pageNumber + 1%>"
+			<a href="composer_bbs.jsp?pageNumber=<%=pageNumber + 1%>"
 				class="btn btn-success btn-arrow-left">다음</a>
 			<%
 			}

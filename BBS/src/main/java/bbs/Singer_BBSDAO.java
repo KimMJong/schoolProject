@@ -6,12 +6,12 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
 
-public class Listener_BBSDAO {
+public class Singer_BBSDAO {
 	private Connection conn;
 	private ResultSet rs;
 
 	// mysql에 접속하는 부분
-	public Listener_BBSDAO() {
+	public Singer_BBSDAO() {
 		try {
 			String dbURL = "jdbc:mysql://localhost:3306/BBS";
 			String dbID = "root";
@@ -171,7 +171,6 @@ public class Listener_BBSDAO {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		
 		return null;
 	}
 
