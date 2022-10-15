@@ -1,10 +1,8 @@
-
-.profile_junk{
+.profile_junk {
   display: flex;
   justify-content: center;
-  
 }
-.all_con{
+.all_con {
   width: 1250px;
   border: 1px solid lightgrey;
   border-radius: 5px;
@@ -12,45 +10,20 @@
 }
 body {
   background-color: #404040;
+  font-family: "ED";
 }
-.header a {
+
+@font-face {
+  font-family: "ED";
+  src: url("./fonts/EF_Diary.ttf") format("truetype");
+}
+
+header a {
   color: #b9a8e3;
   font-size: 36px;
   font-weight: bold;
   margin-bottom: 30px;
   text-decoration-line: none;
-}
-/* 네비게이션 바 */
-.head1 {
-  display: flex;
-}
-
-.navbar-default ul li {
-  text-align: center;
-  width: 120px;
-  height: 30px;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  list-style: none;
-  }
-
-.navbar-default ul li a {
-  color: #b9a8e3;
-  font-size: 16px;
-  text-decoration-line: none;
-  
-}
-.navbar-collapse {
-  padding-right: 200px;
-}
-
-.navbar-nav {
-  display: flex;
-  justify-content: space-between;
-}
-.header {
-  display: flex;
 }
 
 .main_top {
@@ -109,10 +82,10 @@ body {
 .left {
   width: 100px;
   height: 25vh;
-  margin-top: 150px;
+
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-evenly;
   align-items: center;
   align-content: center;
 }
@@ -122,9 +95,9 @@ body {
 }
 /* 홈버튼 */
 #profile_home {
-  border-radius: 20%;
+  border-radius: 10px;
   border: solid whitesmoke;
-  background-color: rgb(189, 167, 232);
+  background-color: #404040;
   color: rgb(189, 167, 232);
   padding: 5px;
   margin-bottom: 50px;
@@ -137,9 +110,9 @@ body {
 
 /* 게시글 버튼 */
 #my_board {
-  border-radius: 20%;
+  border-radius: 10px;
   border: solid whitesmoke;
-  background-color: rgb(189, 167, 232);
+  background-color: #404040;
   color: rgb(189, 167, 232);
   padding: 5px;
   margin-bottom: 50px;
@@ -152,9 +125,9 @@ body {
 
 /* 댓글 버튼 */
 #my_comment {
-  border-radius: 20%;
+  border-radius: 10px;
   border: solid whitesmoke;
-  background-color: rgb(189, 167, 232);
+  background-color: #404040;
   color: rgb(189, 167, 232);
   padding: 5px;
   margin-bottom: 50px;
@@ -167,9 +140,9 @@ body {
 
 /* 포트폴리오 버튼 */
 #my_po {
-  border-radius: 20%;
+  border-radius: 10px;
   border: solid whitesmoke;
-  background-color: rgb(189, 167, 232);
+  background-color: #404040;
   color: rgb(189, 167, 232);
   padding: 5px;
   margin-bottom: 50px;
@@ -207,7 +180,7 @@ main div button a {
 
 /* 오른쪽 사이드 */
 #pf_board_wrap {
-  padding-top: 50px ;
+  padding-top: 50px;
 }
 /* 게시글 포트폴리오 분할 */
 #pf_board_wrap > div {
@@ -218,7 +191,7 @@ main div button a {
 /* .pf_board{
   margin: 100px;
 } */
-#left_wrap { 
+#left_wrap {
   display: flex;
 }
 
@@ -227,7 +200,7 @@ main div button a {
 }
 
 .item:hover {
-  background-color: skyblue;
+  background-color: rgb(172, 172, 172);
 }
 
 .title {
@@ -268,7 +241,7 @@ main div button a {
 /* 게시글,포트폴리오 디자인 */
 .item {
   margin: 30px;
-  background-color: rgb(172, 172, 172);
+
   border-style: solid;
   border-color: aliceblue;
   display: flex;
@@ -276,12 +249,14 @@ main div button a {
   justify-content: space-around;
   align-items: center;
   align-content: center;
+  border-radius: 10px;
 }
 
 .title_pf_board {
   color: #b9a8e3;
   font-size: 30px;
   font-weight: 900;
+  margin-left: 50px;
 }
 .comment {
   color: rgb(77, 77, 255);
@@ -293,4 +268,48 @@ main div button a {
 .date {
   color: antiquewhite;
   font-size: 10pt;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+header a {
+  text-decoration: none;
+}
+
+nav {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+nav ul {
+  list-style: none;
+  border-top: 2px solid rgb(189, 167, 232);
+  border-bottom: 2px solid rgb(189, 167, 232);
+  text-align: center;
+}
+nav ul li {
+  display: inline;
+  letter-spacing: 0.3em;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+nav ul li a {
+  text-decoration: none;
+  font-size: 15pt;
+  font-weight: 800;
+  color: rgb(189, 167, 232);
+  line-height: 3em;
+  text-transform: uppercase;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* 눌렀을떄 변하는 */
+.active {
+  text-decoration: underline skyblue;
+
+  color: skyblue;
 }

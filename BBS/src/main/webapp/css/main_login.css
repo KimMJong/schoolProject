@@ -8,6 +8,11 @@ body {
   padding: 30px;
   background-color: #404040;
   color: rgb(189, 167, 232);
+  font-family: "ED";
+}
+@font-face {
+  font-family: "ED";
+  src: url("./fonts/EF_Diary.ttf") format("truetype");
 }
 
 /* header 영역  */
@@ -15,7 +20,21 @@ header {
   padding: 5px;
   padding-right: 20px;
 }
+.point_wrap {
+  float: right;
+  display: flex;
+  justify-content: row;
+}
 
+.my_point {
+  margin-left: 5px;
+  margin-right: 5px;
+  color: antiquewhite;
+}
+.my_name {
+  margin-left: 5px;
+  color: aliceblue;
+}
 .link {
   display: inline-block;
 }
@@ -35,7 +54,7 @@ header a {
 }
 
 nav {
-  margin-top: 10px;
+  margin-top: 30px;
   margin-bottom: 20px;
 }
 nav ul {
@@ -84,7 +103,7 @@ nav ul li a:hover {
   border-top-left-radius: 5px;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
-
+  font-family: "ED";
   border: 3px solid rgb(189, 167, 232);
   background-color: rgba(0, 0, 0, 0);
   color: rgb(189, 167, 232);
@@ -96,7 +115,7 @@ nav ul li a:hover {
   border-top-left-radius: 5px;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
-
+  font-family: "ED";
   border: 3px solid rgb(189, 167, 232);
   background-color: rgba(0, 0, 0, 0);
   color: rgb(189, 167, 232);
@@ -126,11 +145,61 @@ nav ul li a:hover {
   height: 52px;
   position: absolute;
   color: rgb(189, 167, 232);
+  font-family: "ED";
 }
 
-#mainimg {
-  margin-bottom: 30px;
+#searchBtn:hover {
+  color: white;
+  background-color: skyblue;
 }
+
+.search_con {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  margin-right: 53px;
+}
+
+#selSearchOption {
+  text-align: center;
+  height: 52px;
+  width: 70px;
+  border-radius: 5px;
+  border: 3px solid rgb(189, 167, 232);
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(189, 167, 232);
+  font-family: "ED";
+}
+
+input {
+  font-size: 10pt;
+  padding-left: 10px;
+}
+/* 검색창 */
+#searchBar {
+  width: 600px;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+}
+
+/* 검색버튼 */
+#searchBtn {
+  margin-left: 5px;
+  width: 50px;
+  height: 52px;
+  position: absolute;
+  border: 3px solid rgb(189, 167, 232);
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(189, 167, 232);
+  border-radius: 5px;
+}
+
+/* #mainimg {
+  margin-bottom: 30px;
+} */
 
 /* 게시판 CSS */
 .list_con {
@@ -142,12 +211,13 @@ nav ul li a:hover {
 }
 
 .all_pop_wrap {
-  background-color: rgb(104, 103, 103);
+  /* background-color: rgb(104, 103, 103); */
   color: white;
   margin: 30px;
   width: 500px;
   height: 100%;
   border: 3px solid rgb(189, 167, 232);
+  border-radius: 10px;
 }
 
 .all_pop_list_body .item > div {
@@ -161,12 +231,14 @@ nav ul li a:hover {
 
 .item {
   margin: 10px;
-  background-color: rgb(172, 172, 172);
+  /* background-color: rgb(172, 172, 172); */
+  border: solid 2px white;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
   align-content: center;
+  border-radius: 10px;
 }
 
 .all_pop_list_body a {
@@ -186,7 +258,7 @@ nav ul li a:hover {
 } */
 
 .item:hover {
-  background-color: skyblue;
+  background-color: rgb(172, 172, 172);
 }
 /* .item a {
   text-decoration: none;
@@ -218,7 +290,7 @@ nav ul li a:hover {
   font-size: 15pt;
   font-style: italic;
   text-decoration: underline;
-  color: rgb(117, 117, 117);
+  color: aliceblue;
   margin-left: 25px;
   margin-right: 5px;
 }
@@ -239,10 +311,10 @@ nav ul li a:hover {
 }
 
 .comment {
-  color: rgb(77, 77, 255);
+  color: rgb(153, 153, 255);
   line-height: 50px;
   font-size: 10pt;
-  margin-right: 10px;
+  margin-right: 25px;
 }
 
 .date {

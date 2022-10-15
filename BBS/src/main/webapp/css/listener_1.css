@@ -8,6 +8,12 @@ body {
   padding: 30px;
   background-color: #404040;
   color: rgb(189, 167, 232);
+  font-family: "ED";
+}
+
+@font-face {
+  font-family: "ED";
+  src: url("./fonts/EF_Diary.ttf") format("truetype");
 }
 
 /* header 영역  */

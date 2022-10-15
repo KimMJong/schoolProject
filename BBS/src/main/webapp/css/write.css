@@ -4,7 +4,13 @@
 }
 body {
   background-color: #404040;
+  font-family: "ED";
 }
+@font-face {
+  font-family: "ED";
+  src: url("./fonts/EF_Diary.ttf") format("truetype");
+}
+
 .header a {
   color: #b9a8e3;
   font-size: 36px;
@@ -280,9 +286,6 @@ a {
 .board_view .info dl dd {
   display: inline-block;
   font-size: 1.4rem;
-}
-
-.board_view .info dl dt {
 }
 
 .board_view .info dl dd {

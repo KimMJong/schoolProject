@@ -10,7 +10,13 @@
 }
 body {
   background-color: #404040;
+  font-family: "ED";
 }
+@font-face {
+  font-family: "ED";
+  src: url("./fonts/EF_Diary.ttf") format("truetype");
+}
+
 .header a {
   color: #b9a8e3;
   font-size: 36px;
@@ -19,35 +25,26 @@ body {
   text-decoration-line: none;
 }
 /* 네비게이션 바 */
-.head1 {
-  display: flex;
+#login_btn {
+  margin-top: 4.5px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+
+  border: 3px solid rgb(189, 167, 232);
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(189, 167, 232);
+  padding: 10px;
 }
 
-.navbar-default ul li {
-  text-align: center;
-  width: 120px;
-  height: 30px;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  text-align: center;
+#login_btn_group {
+  margin-top: 100px;
 }
 
-.navbar-default ul li a {
-  color: #b9a8e3;
-  font-size: 16px;
-  text-decoration-line: none;
-}
-.navbar-collapse {
-  padding-right: 200px;
-}
-
-.navbar-nav {
-  display: flex;
-  justify-content: space-between;
-}
-.header {
-  display: flex;
+#login_btn_group button:hover {
+  color: white;
+  background-color: skyblue;
 }
 
 .main_top {
@@ -217,7 +214,7 @@ main div button a {
 }
 
 .item:hover {
-  background-color: skyblue;
+  background-color: grey;
 }
 
 .title {
@@ -258,7 +255,7 @@ main div button a {
 /* 게시글,포트폴리오 디자인 */
 .item {
   margin: 30px;
-  background-color: rgb(172, 172, 172);
+  border-radius: 10px;
   border-style: solid;
   border-color: aliceblue;
   display: flex;
@@ -334,4 +331,48 @@ main div button a {
   background-color: #42454c;
   color: #fff;
   border: 1px solid #42454c;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+header a {
+  text-decoration: none;
+}
+
+nav {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+nav ul {
+  list-style: none;
+  border-top: 2px solid rgb(189, 167, 232);
+  border-bottom: 2px solid rgb(189, 167, 232);
+  text-align: center;
+}
+nav ul li {
+  display: inline;
+  letter-spacing: 0.3em;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+nav ul li a {
+  text-decoration: none;
+  font-size: 15pt;
+  font-weight: 800;
+  color: rgb(189, 167, 232);
+  line-height: 3em;
+  text-transform: uppercase;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* 눌렀을떄 변하는 */
+.active {
+  text-decoration: underline skyblue;
+
+  color: skyblue;
 }

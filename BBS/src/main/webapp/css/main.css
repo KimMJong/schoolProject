@@ -8,6 +8,11 @@ body {
   padding: 30px;
   background-color: #404040;
   color: rgb(189, 167, 232);
+  font-family: "ED";
+}
+@font-face {
+  font-family: "ED";
+  src: url("./fonts/EF_Diary.ttf") format("truetype");
 }
 
 /* header 영역  */
@@ -74,7 +79,7 @@ nav ul li a:hover {
   border-top-left-radius: 5px;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
-
+  font-family: "ED";
   border: 3px solid rgb(189, 167, 232);
   background-color: rgba(0, 0, 0, 0);
   color: rgb(189, 167, 232);
@@ -104,11 +109,13 @@ nav ul li a:hover {
   height: 52px;
   width: 70px;
   border-radius: 5px;
+  border: 3px solid rgb(189, 167, 232);
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(189, 167, 232);
+  font-family: "ED";
 }
 
 input {
-
-  
   font-size: 10pt;
   padding-left: 10px;
 }
@@ -126,7 +133,16 @@ input {
   width: 50px;
   height: 52px;
   position: absolute;
+  border: 3px solid rgb(189, 167, 232);
+  background-color: rgba(0, 0, 0, 0);
   color: rgb(189, 167, 232);
+  border-radius: 5px;
+  font-family: "ED";
+}
+
+#searchBtn:hover {
+  color: white;
+  background-color: skyblue;
 }
 
 #mainimg {
@@ -143,12 +159,13 @@ input {
 }
 
 .all_pop_wrap {
-  background-color: rgb(104, 103, 103);
+  /* background-color: rgb(104, 103, 103); */
   color: white;
   margin: 30px;
   width: 500px;
   height: 100%;
   border: 3px solid rgb(189, 167, 232);
+  border-radius: 10px;
 }
 
 .all_pop_list_body .item > div {
@@ -162,12 +179,14 @@ input {
 
 .item {
   margin: 10px;
-  background-color: rgb(172, 172, 172);
+  /* background-color: rgb(172, 172, 172); */
+  border: solid 2px white;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
   align-content: center;
+  border-radius: 10px;
 }
 
 .all_pop_list_body a {
@@ -187,7 +206,7 @@ input {
 } */
 
 .item:hover {
-  background-color: skyblue;
+  background-color: rgb(172, 172, 172);
 }
 /* .item a {
   text-decoration: none;
@@ -219,7 +238,7 @@ input {
   font-size: 15pt;
   font-style: italic;
   text-decoration: underline;
-  color: rgb(117, 117, 117);
+  color: aliceblue;
   margin-left: 25px;
   margin-right: 5px;
 }
@@ -240,10 +259,10 @@ input {
 }
 
 .comment {
-  color: rgb(77, 77, 255);
+  color: rgb(153, 153, 255);
   line-height: 50px;
   font-size: 10pt;
-  margin-right: 10px;
+  margin-right: 25px;
 }
 
 .date {

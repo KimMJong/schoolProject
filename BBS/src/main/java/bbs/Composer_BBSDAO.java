@@ -10,12 +10,12 @@ public class Composer_BBSDAO {
 	private Connection conn;
 	private ResultSet rs;
 
-	// mysql¿¡ Á¢¼ÓÇÏ´Â ºÎºÐ
+	// mysqlï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½Îºï¿½
 	public Composer_BBSDAO() {
 		try {
 			String dbURL = "jdbc:mysql://localhost:3306/BBS";
 			String dbID = "root";
-			String dbPassword = "rlaanswhd1";
+			String dbPassword = "1234";
 			Class.forName("com.mysql.jdbc.Driver");
 			conn = DriverManager.getConnection(dbURL, dbID, dbPassword);
 
@@ -24,7 +24,7 @@ public class Composer_BBSDAO {
 		}
 	}
 
-	// ÇöÀç ½Ã°£
+	// ï¿½ï¿½ï¿½ï¿½ ï¿½Ã°ï¿½
 	public String getDate() {
 		String SQL = "SELECT NOW()";
 		try {
@@ -36,7 +36,7 @@ public class Composer_BBSDAO {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		return ""; // µ¥ÀÌÅÍº£ÀÌ½º ¿À·ù
+		return ""; // ï¿½ï¿½ï¿½ï¿½ï¿½Íºï¿½ï¿½Ì½ï¿½ ï¿½ï¿½ï¿½ï¿½
 	}
 
 	public int getNext() {
@@ -47,11 +47,11 @@ public class Composer_BBSDAO {
 			if (rs.next()) {
 				return rs.getInt(1) + 1;
 			}
-			return 1; // Ã¹¹øÂ° °Ô½Ã¹°
+			return 1; // Ã¹ï¿½ï¿½Â° ï¿½Ô½Ã¹ï¿½
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		return -1; // µ¥ÀÌÅÍº£ÀÌ½º ¿À·ù
+		return -1; // ï¿½ï¿½ï¿½ï¿½ï¿½Íºï¿½ï¿½Ì½ï¿½ ï¿½ï¿½ï¿½ï¿½
 	}
 
 	
@@ -76,7 +76,7 @@ public class Composer_BBSDAO {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		return -1; // µ¥ÀÌÅÍº£ÀÌ½º ¿À·ù
+		return -1; // ï¿½ï¿½ï¿½ï¿½ï¿½Íºï¿½ï¿½Ì½ï¿½ ï¿½ï¿½ï¿½ï¿½
 	}
 	public int getPoint(String userID) {
 		String SQL = "select userPoint from user where userID = ?";
@@ -107,10 +107,10 @@ public class Composer_BBSDAO {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		return -1; // µ¥ÀÌÅÍº£ÀÌ½º ¿À·ù
+		return -1; // ï¿½ï¿½ï¿½ï¿½ï¿½Íºï¿½ï¿½Ì½ï¿½ ï¿½ï¿½ï¿½ï¿½
 	}
 
-	// °Ô½Ã±Û ¸ñ·ÏÀ» º¸¿©ÁÖ´Â arraylistÇÔ¼ö
+	// ï¿½Ô½Ã±ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ö´ï¿½ arraylistï¿½Ô¼ï¿½
 	public ArrayList<Composer_BBS> getList(int pageNumber) {
 		String SQL = "SELECT * FROM Composer_BBS WHERE bbsID < ? AND bbsAvailable = 1 order by bbsID DESC LIMIT 8";
 		ArrayList<Composer_BBS> list = new ArrayList<Composer_BBS>();
@@ -150,7 +150,7 @@ public class Composer_BBSDAO {
 		return false;
 	}
 
-	// ¸ñ·Ï º¸¿©ÁÖ´Â ÇÔ¼ö
+	// ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ö´ï¿½ ï¿½Ô¼ï¿½
 	public Composer_BBS getBbs(int bbsID) {
 		String SQL = "SELECT * FROM Composer_BBS WHERE bbsID = ?";
 		try {
@@ -185,7 +185,7 @@ public class Composer_BBSDAO {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		return -1; // µ¥ÀÌÅÍº£ÀÌ½º ¿À·ù
+		return -1; // ï¿½ï¿½ï¿½ï¿½ï¿½Íºï¿½ï¿½Ì½ï¿½ ï¿½ï¿½ï¿½ï¿½
 	}
 
 	public int delete(int bbsID) {
@@ -198,7 +198,7 @@ public class Composer_BBSDAO {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		return -1; // µ¥ÀÌÅÍº£ÀÌ½º ¿À·ù
+		return -1; // ï¿½ï¿½ï¿½ï¿½ï¿½Íºï¿½ï¿½Ì½ï¿½ ï¿½ï¿½ï¿½ï¿½
 	}
 
 }

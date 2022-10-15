@@ -42,12 +42,12 @@
 			<div class="navbar-collapse" id="bs-example-navbar-collapse-1"
 				aria-expanded="false">
 				<ul class="navbar-nav">
-					<li><a href="main.jsp">홈</a></li>
-					<li><a href="listener_bbs.jsp">리스너</a></li>
-					<li><a href="composer_bbs.jsp">작곡가</a></li>
-					<li><a href="engineer_bbs.jsp">엔지니어</a></li>
-					<li><a href="ppl_bbs.jsp">홍보게시판</a></li>
-					<li><a href="market_bbs.jsp">장터게시판</a></li>
+					<li><a href="main.jsp">HOME</a></li>
+					<li><a href="listener_bbs.jsp">LISTENER</a></li>
+					<li><a href="composer_bbs.jsp">COMPOSER</a></li>
+					<li><a href="engineer_bbs.jsp">ENGINEER</a></li>
+					<li><a href="ppl_bbs.jsp">PROMOTION</a></li>
+					<li><a href="market_bbs.jsp">MARKET</a></li>
 				</ul>
 			</div>
 		</nav>

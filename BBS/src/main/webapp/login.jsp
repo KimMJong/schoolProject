@@ -19,8 +19,8 @@
         <div class=login_main>
             <div class="login_con">
                 <div style="text-align:center">
-                    <a href="https://naver.com">
-                        <img id="login_logo" src="./assets/mainlogo.png" /></a>
+                    <a href="main.jsp">
+                        <img id="login_logo" src="./assets/mainlogo.PNG" /></a>
                 </div>
                 <div id="login_text">LOGIN</div>
                 <div id="facebook_login">

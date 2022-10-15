@@ -4,7 +4,13 @@
 }
 body {
   background-color: #404040;
+  font-family: "ED";
 }
+@font-face {
+  font-family: "ED";
+  src: url("./fonts/EF_Diary.ttf") format("truetype");
+}
+
 .header a {
   color: #b9a8e3;
   font-size: 36px;
@@ -13,9 +19,6 @@ body {
   margin-bottom: 30px;
   text-decoration-line: none;
 }
- HEAD
-/* �꽕鍮꾧쾶�씠�뀡 諛� */
-
 /* 네비게이션 바 */
 #login_btn {
   margin-top: 4.5px;
@@ -39,14 +42,12 @@ body {
   background-color: skyblue;
 }
 
-
 .head1 {
   align-items: center;
   justify-content: center;
   display: flex;
   margin-left: 20px;
 }
-
 .navbar-default ul li {
   text-align: center;
   width: 120px;
@@ -81,7 +82,7 @@ body {
   gap: 20px;
   margin-bottom: 20px;
 }
-/* 諛붾뵒 */
+/* 바디 */
 html {
   font-size: 10px;
 }

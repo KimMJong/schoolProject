@@ -31,23 +31,18 @@
 	%>
 	<nav class="navbar navbar-default">
 		<div class="navbar-header">
-			<button type="button" class="navbar-toggle collapsed"
-				data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
-				aria-expanded="false">
-				<span class="icon-bar"></span> <span class="icon-bar"></span> <span
-					class="icon-bar"></span>
-			</button>
-			<a class="navbar-brand" href="main.jsp">HIP-UP</a>
+			<a href="main.jsp"> <img src="assets/logo.PNG" />
+		</a>
 		</div>
 		<div class="collapse navbar-collapse"
 			id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav">
-				<li><a href="main.jsp">홈</a></li>
-				<li class="active"><a href="listener_bbs.jsp">리스너</a></li>
-				<li><a href="composer_bbs.jsp">작곡가</a></li>
-				<li><a href="engineer_bbs.jsp">엔지니어</a></li>
-				<li><a href="ppl_bbs.jsp">홍보게시판</a></li>
-				<li><a href="market_bbs.jsp">장터게시판</a></li>
+				<li><a href="main.jsp">HOME</a></li>
+				<li class="active"><a href="listener_bbs.jsp">LISTENER</a></li>
+				<li><a href="composer_bbs.jsp">COMPOSER</a></li>
+				<li><a href="engineer_bbs.jsp">EMGINEER</a></li>
+				<li><a href="ppl_bbs.jsp">PROMOTION</a></li>
+				<li><a href="market_bbs.jsp">MARKET</a></li>
 			</ul>
 			<%
 			if (userID == null) {

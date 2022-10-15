@@ -14,7 +14,31 @@ body {
   text-decoration-line: none;
 }
 /* 네비게이션 바 */
+#login_btn {
+  margin-top: 4.5px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+
+  border: 3px solid rgb(189, 167, 232);
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(189, 167, 232);
+  padding: 10px;
+}
+
+#login_btn_group {
+  margin-top: 100px;
+}
+
+#login_btn_group button:hover {
+  color: white;
+  background-color: skyblue;
+}
 .head1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   display: flex;
   margin-left: 20px;
 }
@@ -59,23 +83,72 @@ body {
 .portfolio_junk {
   display: flex;
   justify-content: center;
+  margin: 0 auto;
+  border: 1px solid aliceblue;
+  background-color: rgba(37, 37, 37, 0.705);
+  border-radius: 10px;
+  width: 900px;
+  height: 1000px;
 }
 
 body {
   background-color: #404040;
 }
 .po_all_con {
-  width: 1250px;
+  width: 900px;
   border-radius: 5px;
-  padding: 50px;
 }
 
-.write_button {
-  display: flex;
-  justify-content: end;
+.po_top {
+  width: 900px;
+  height: 50px;
+  color: rgb(150, 188, 245);
+  text-align: center;
+  padding-top: 5px;
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-weight: bold;
+
+  border-bottom: solid 1px aliceblue;
 }
 
-button {
+.po_lyrics {
+  padding-top: 20px;
+  border-top: solid 2px aliceblue;
+  width: 900px;
+  height: 600px;
+  color: rgb(150, 188, 245);
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  font-size: 15pt;
+  font-weight: lighter;
+}
+
+.sc_player {
+  margin-left: 43px;
+  align-items: center;
+  align-content: center;
+}
+/* 푸터 */
+#buttons button:hover {
+  background-color: rgb(162, 162, 162);
+  cursor: pointer;
+}
+
+#wr {
+  width: 100px;
+  height: 50px;
+  background-color: rgb(120, 120, 120);
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 20px;
+  border: grey;
+  float: right;
+}
+
+#cen {
   width: 100px;
   height: 50px;
   background-color: rgb(120, 120, 120);
@@ -86,70 +159,22 @@ button {
   border: grey;
 }
 
-button:hover {
-  background-color: rgb(162, 162, 162);
-  cursor: pointer;
-}
-
-.po_top {
-  width: 1250px;
+#del {
+  width: 100px;
   height: 50px;
-  border: 1px solid #b9a8e3;
-  background-color: #b9a8e3;
+  background-color: rgb(120, 120, 120);
   color: white;
-  border-radius: 10px;
-  text-align: center;
-  font-size: 30px;
-  font-weight: bold;
-}
-
-.po_sc {
-  display: flex;
-  width: 1250px;
-  height: 250px;
-  background-color: lightgrey;
-  /* border-radius: 10px; */
-}
-
-.po_sc_img {
-  flex-grow: 3;
-}
-.po_sc_introduce {
-  flex-grow: 7;
-  text-align: center;
-  margin-top: 50px;
-}
-
-.po_bar {
-  display: flex;
-  width: 1250px;
-  height: 50px;
-  border: 1px solid #b9a8e3;
-  background-color: #b9a8e3;
-  color: white;
-  border-radius: 10px;
-  text-align: center;
   font-size: 20px;
   font-weight: bold;
+  border-radius: 20px;
+  border: grey;
+  float: left;
 }
 
-.po_bar .buttons {
-  flex-grow: 3;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
-}
-
-.bar_songplay {
-  flex-grow: 7;
+.footer_wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   margin: 0 auto;
-}
-
-.po_lyrics {
-  width: 1250px;
-  height: 2000px;
-  background-color: rgb(130, 130, 130);
-  color: white;
-  text-align: center;
-  font-weight: lighter;
+  width: 900px;
 }

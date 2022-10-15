@@ -47,7 +47,7 @@
     	}else{
    	%>
     		<div style='width:190px; margin-right: 10px; float: right;' id="login_btn_group">
-    	      <a href="profil.jsp"><button id="login_btn">MY PAGE</button></a>
+    	      <a href="profile.jsp"><button id="login_btn">MY PAGE</button></a>
     	      <a href="logoutAction.jsp"><button id="login_btn">LOGOUT</button></a>
     	    </div>
     <% 
@@ -60,13 +60,13 @@
   <!-- 카테고리 -->
   <nav>
     <ul>
-      <li><a class="active" href="main.jsp">홈</a></li>
-      <li><a href="listener_bbs.jsp">리스너</a></li>
-      <li><a href="singer_bbs.jsp">가창자</a></li>
-      <li><a href="composer_bbs.jsp">작곡가</a></li>
-      <li><a href="engineer_bbs.jsp">엔지니어</a></li>
-      <li><a href="ppl_bbs.html">홍보게시판</a></li>
-      <li><a href="index.html">장터</a></li>
+      <li><a class="active" href="main.jsp">HOME</a></li>
+      <li><a href="listener_bbs.jsp">LISTENER</a></li>
+      <li><a href="singer_bbs.jsp">SINGER</a></li>
+      <li><a href="composer_bbs.jsp">COMPOSER</a></li>
+      <li><a href="engineer_bbs.jsp">ENGINEER</a></li>
+      <li><a href="ppl_bbs.html">PROMOTION</a></li>
+      <li><a href="index.html">MARKET</a></li>
     </ul>
   </nav>
 
@@ -86,8 +86,8 @@
 
   <!-- 메인로고이미지 -->
   <div style="text-align:center">
-    <a href="https://naver.com">
-      <img src="assets/mainlogo.PNG" /></a>
+    <a class="link" href="main.jsp">
+      <img src="./assets/mainlogo.PNG" /></a>
   </div>
 
   <!-- 검색버튼 -->
@@ -102,9 +102,13 @@
       </form> -->
         <setction class="container">
           <form method="post" name="search" action="searchAction.jsp" id="search-form">
+            <select id="selSearchOption">
+              <option value="T">제목</option>
+              <option value="W">작성자</option>
+            </select>
             <input type="text" id="searchBar"
             	placeholder="찾고싶은 게시글 제목입력" name="searchText" maxlength="100">
-            <button type="submit" id="searchBtn">search</button>
+            <button type="submit" id="searchBtn">검색</button>
           </form>
         </setction>
         </setction>
@@ -113,9 +117,7 @@
   </div>
 
   <!-- 메인이미지 -->
-  <div style="text-align:center">
-    <img src="./assets/mainimg.jpg" id="mainimg" alt="mainimg" width="750" height="345" margin>
-  </div>
+ 
   <div class=list_con>
     <div class=ingi1>
       <div class="all_pop_wrap">
